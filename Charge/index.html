@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Charge</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="ico/cerveja.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<!----header design--->
+	<header>
+		<a href="#"><img class="logo" src="img/logo-expediente.png"></a>
+
+		<ul class="navlist">
+			<li><a href="#home" class="active">HOME</a></li>
+			<li><a href="#orcamento">ORÇAMENTO</a></li>
+			<li><a href="cardapio.html">CARDÁPIO</a>
+			<li>
+				<!-- <li><a href="#about">SOBRE</a></li> -->
+			<li><a href="#services">SERVIÇOS</a></li>
+			<li><a href="#portfolio">FOTOS</a></li>
+			<li><a href="#avaliacao">AVALIAÇÃO</a></li>
+			<li><a href="#contact">CONTATO</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon">
+
+		</div>
+	</header>
+	<!----home section design--->
+	<section class="home" id="home">
+	</section>
+
+	<!----about section design--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/img4.png">
+		</div>
+
+		<div class="about-text">
+			<h2  style="color:white">Sobre <span>Nós</span></h2>
+			<h4>O bar que mais evolui em #sjc</h4>
+			<p>O <span>Expediente Bar</span> é localizado na Rua Paulo da Silva Santos, N°32 atrás do vale sul. Temos
+				porções maravilhosas, cerveja gelada, música ao vivo como sertanejo e claro <span>pagode</span>. Foi
+				inaugurado no dia 05 de novembro em 2021 e desde então vamos evoluindo cada vez mais</p>
+		</div>
+	</section>
+
+	<!----service section design--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<h2><span>Nossos</span> Servicos</h2>
+			<p>O que oferecemos?</p>
+		</div>
+
+		<div class="services-content">
+
+		</div>
+	</section>
+
+	<!----portfolio section design--->
+	<section class="avaliacao" id="avaliacao">
+		<div class="main-text">
+			<h2><span>Avaliações</span></h2>
+			<p style="color:white">Avaliações de clientes</p>
+		</div>
+
+	</section>
+
+	<section class="orcamento" id="orcamento">
+		<div class="main-text">
+			<h2>Faça seu <span>orçamento</span></h2>
+			<p>A orçamento será enviado para o nosso WhatsApp</p>
+		</div>
+		<div class="form-orcamento">
+			<div class="inputGroup">
+				<input id="text_nome" autocomplete="off" required="" type="text">
+				<label for="name">Nome*</label>
+			</div>
+			<div class="inputGroup" style="width: 49%;">
+				<input id="text_evento" autocomplete="off" required="" type="text">
+				<label for="name">Evento</label>
+			</div>
+			<div class="inputGroup" style="width: 49%;">
+				<input id="text_qtd" autocomplete="off" required="" type="number">
+				<label for="name">Quantidade*</label>
+			</div>
+			<div class="inputGroup" style="width: 49%;">
+				<input id="text_data" autocomplete="off" required="" type="date">
+				<label for="name"
+					style="transform: translateY(-50%) scale(.9);margin: 0em;margin-left: 1.3em;padding:0 0.4em;background-color: var(--second-bg-color);">Data*</label>
+			</div>
+			<div class="inputGroup" style="width: 49%;">
+				<input id="text_hora" autocomplete="off" required="" type="time">
+				<label for="name"
+					style="transform: translateY(-50%) scale(.9);margin: 0em;margin-left: 1.3em;padding:0 0.4em;background-color: var(--second-bg-color);">Horário*</label>
+			</div>
+			<div class="inputGroup">
+				<input id="text_obs" autocomplete="off" required="" type="text">
+				<label for="name">Observação</label>
+			</div>
+			<a id="apiLink" class="btn-orcamento">Reservar</a>
+		</div>
+	</section>
+
+	<!----maps section design--->
+	<section class="maps" id="maps">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14670.497477577439!2d-45.8837871!3d-23.1839059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b8edb673053%3A0x7b2891a3628545db!2sElectronic%20Charge!5e0!3m2!1spt-BR!2sbr!4v1703209309129!5m2!1spt-BR!2sbr" 
+				width="100%" height="300" style="border-radius: 0; border: none;" allowfullscreen=" " loading="lazy "
+				referrerpolicy="no-referrer-when-downgrade "></iframe>
+	</section>
+
+	<!----end section design--->
+	<section class="end">
+		<div class="last-text">
+			<p>© 2022 por Ali Mohamed. - @alikhodr10</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/reserva.js"></script>
+
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YTW99R9W7X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-YTW99R9W7X');
+	</script>
+
+</body>
+
+</html>
