@@ -50,7 +50,7 @@
 		</div>
 	</section>
 
-	<a class="mdi--whatsapp" href="https://api.whatsapp.com/send?phone=551299685-0827&text=Olá" target="_blank"> 
+	<a class="mdi--whatsapp" href="https://api.whatsapp.com/send?phone=551299685-0827&text=Olá" target="_blank">
 	</a>
 
 	<!----service section design--->
@@ -196,7 +196,7 @@
 					</ul>
 				</div>
 			</div>
-			<button class="button">
+			<a class="button" target="_blank" href="https://www.google.com/search?q=electron+charge+sjc&sca_esv=b061e2632347ae6b&sxsrf=ADLYWIIWuyLRB0K9Qh43WP73HBcapGZihA%3A1717522933767&ei=9VFfZrvELqPL1sQPy4GHSA&udm=&ved=0ahUKEwj7kvHCv8KGAxWjpZUCHcvAAQkQ4dUDCBA&uact=5&oq=electron+charge+sjc&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2VsZWN0cm9uIGNoYXJnZSBzamMyBRAhGKABMgQQIRgVMgUQIRifBTIFECEYnwVI8BFQbFjqEHABeAKQAQCYAZgBoAGZBaoBAzAuNbgBA8gBAPgBAZgCB6ACtQXCAgQQABhHwgIIEAAYgAQYywHCAgYQABgWGB7CAggQABgWGAoYHsICCBAAGBYYHhgPwgIHECEYoAEYCpgDAOIDBRIBMSBAiAYBkAYIkgcDMi41oAfgFA&sclient=gws-wiz-serp#ip=1&lrd=0x94cc4b8edb673053:0x7b2891a3628545db,3,,,,">
 				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
 					<path fill="#4285F4"
 						d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027">
@@ -212,7 +212,7 @@
 					</path>
 				</svg>
 				Nos avalie no Google também
-			</button>
+			</a>
 		</div>
 	</section>
 
@@ -222,23 +222,36 @@
 			<p>A mensagem será enviada para o nosso WhatsApp</p>
 		</div>
 		<div class="form-orcamento">
-			<div class="inputGroup">
-				<input id="text_nome" autocomplete="off" required="" type="text">
-				<label for="name">Nome</label>
+				<div class="inputGroup">
+					<input id="text_nome" autocomplete="off" required="" type="text">
+					<label for="name">Nome</label>
+				</div>
+				<div class="inputGroup" style="width: 49%;">
+					<input id="text_aparelho" autocomplete="off" required="" type="text">
+					<label for="name">Aparelho</label>
+				</div>
+				<div class="inputGroup" style="width: 49%;">
+					<input id="text_marca" autocomplete="off" required="" type="text">
+					<label for="name">Marca</label>
+				</div>
+				<div class="inputGroup">
+					<input id="text_problema" autocomplete="off" required="" type="text">
+					<label for="name">Problema</label>
+				</div>
+				<a id="apiLink" class="button" style="background-color: #55a234;border:none;" target="_blank">Enviar</a>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="main-text">
+			<h2><span>Redes <span>Sociais</span></h2>
+			<p style="color:white;margin-bottom: 0;">Nos siga para ficar por dentro de tudo</p>
+		</div>
+		<div class="contactSection">
+			<div class="contact-icons">
+				<a class="instagram" href="https://www.instagram.com/electronic.charge/?hl=pt-br" target="_blank"><i class='bx bxl-instagram-alt'></i> Instagram</a>
+				<a class="facebook" href="https://www.facebook.com/electroniccharge" target="_blank"><i class='bx bxl-facebook'></i> Facebook</a>
 			</div>
-			<div class="inputGroup" style="width: 49%;">
-				<input id="text_aparelho" autocomplete="off" required="" type="text">
-				<label for="name">Aparelho</label>
-			</div>
-			<div class="inputGroup" style="width: 49%;">
-				<input id="text_marca" autocomplete="off" required="" type="text">
-				<label for="name">Marca</label>
-			</div>
-			<div class="inputGroup">
-				<input id="text_problema" autocomplete="off" required="" type="text">
-				<label for="name">Problema</label>
-			</div>
-			<a id="apiLink" class="button" style="background-color: #55a234;border:none;" target="_blank">Enviar</a>
 		</div>
 	</section>
 
