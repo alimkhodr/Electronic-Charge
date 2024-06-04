@@ -12,7 +12,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-	<link rel="shortcut icon" href="ico/cerveja.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="ico/ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -20,18 +24,13 @@
 
 	<!----header design--->
 	<header>
-		<a href="#"><img class="logo" src="img/logo-expediente.png"></a>
+		<a href="#"><img class="logo" src="img/5.png"></a>
 
 		<ul class="navlist">
 			<li><a href="#home" class="active">HOME</a></li>
-			<li><a href="#orcamento">ORÇAMENTO</a></li>
-			<li><a href="cardapio.html">CARDÁPIO</a>
-			<li>
-				<!-- <li><a href="#about">SOBRE</a></li> -->
 			<li><a href="#services">SERVIÇOS</a></li>
-			<li><a href="#portfolio">FOTOS</a></li>
 			<li><a href="#avaliacao">AVALIAÇÃO</a></li>
-			<li><a href="#contact">CONTATO</a></li>
+			<li><a href="#orcamento">ORÇAMENTO</a></li>
 		</ul>
 
 		<div class="bx bx-menu" id="menu-icon">
@@ -40,32 +39,54 @@
 	</header>
 	<!----home section design--->
 	<section class="home" id="home">
-	</section>
 
-	<!----about section design--->
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="img/img4.png">
-		</div>
-
-		<div class="about-text">
-			<h2  style="color:white">Sobre <span>Nós</span></h2>
-			<h4>O bar que mais evolui em #sjc</h4>
-			<p>O <span>Expediente Bar</span> é localizado na Rua Paulo da Silva Santos, N°32 atrás do vale sul. Temos
-				porções maravilhosas, cerveja gelada, música ao vivo como sertanejo e claro <span>pagode</span>. Foi
-				inaugurado no dia 05 de novembro em 2021 e desde então vamos evoluindo cada vez mais</p>
+		<div class="fluent--developer-board-lightning-toolbox-20-filled"></div>
+		<div class="title">
+			<span style="    font-weight: bold;">Assistência Técnica Electronic Charge</span>
+			<br>
+			<p>O suporte que você precisa com a experiência que você merece.</p>
+			</span>
 		</div>
 	</section>
+
+	<a class="mdi--whatsapp">
+
+	</a>
 
 	<!----service section design--->
 	<section class="services" id="services">
 		<div class="main-text">
 			<h2><span>Nossos</span> Servicos</h2>
-			<p>O que oferecemos?</p>
+			<p>Serviços de limpeza, upgrade, troca de componentes e outros.</p>
 		</div>
 
 		<div class="services-content">
-
+			<div id="slider-container">
+				<span onclick="slideRight()" class="btn"></span>
+				<div id="slider">
+					<div class="slide">
+						<img src="img/btv.png" alt="">
+						<span>TV Box</span>
+						<a href="">Consultar <p class="teenyicons--right-solid"></p></a>
+					</div>
+					<div class="slide">
+						<img src="img/celular.png" alt="">
+						<span>Celular</span>
+						<a href="">Consultar <p class="teenyicons--right-solid"></p></a>
+					</div>
+					<div class="slide">
+						<img src="img/tv.png" alt="">
+						<span>TV</span>
+						<a href="">Consultar <p class="teenyicons--right-solid"></p></a>
+					</div>
+					<div class="slide">
+						<img src="img/computador.png" alt="">
+						<span>Computador</span>
+						<a href="">Consultar <p class="teenyicons--right-solid"></p></a>
+					</div>
+				</div>
+				<span onclick="slideLeft()" class="btn"></span>
+			</div>
 		</div>
 	</section>
 
@@ -73,69 +94,176 @@
 	<section class="avaliacao" id="avaliacao">
 		<div class="main-text">
 			<h2><span>Avaliações</span></h2>
-			<p style="color:white">Avaliações de clientes</p>
+			<p style="color:white;margin-bottom: 0;">Avaliações de clientes</p>
 		</div>
+		<div class="reviewSection">
+			<div class="reviewItem">
+				<div class="top">
+					<div class="clientImage">
+						<img src="img/person.png" alt="">
+						<span style="line-height: 1;">Raju Sheoran<br>
+							<p style="color: #fff;font-size: 15px;">Lorem</p>
+						</span>
+					</div>
+				</div>
+				<article>
+					<p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+						voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+						facere exercitationem!</p>
+				</article>
+				<div class="top">
+					<ul>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+					</ul>
+				</div>
+			</div>
 
+			<div class="reviewItem">
+				<div class="top">
+					<div class="clientImage">
+						<img src="img/person.png" alt="">
+						<span style="line-height: 1;">Raju Sheoran<br>
+							<p style="color: #fff;font-size: 15px;">Lorem</p>
+						</span>
+					</div>
+				</div>
+				<article>
+					<p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+						voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+						facere exercitationem!</p>
+				</article>
+				<div class="top">
+					<ul>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="reviewItem">
+				<div class="top">
+					<div class="clientImage">
+						<img src="img/person.png" alt="">
+						<span style="line-height: 1;">Raju Sheoran<br>
+							<p style="color: #fff;font-size: 15px;">Lorem</p>
+						</span>
+					</div>
+				</div>
+				<article>
+					<p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+						voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+						facere exercitationem!</p>
+				</article>
+				<div class="top">
+					<ul>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="reviewItem">
+				<div class="top">
+					<div class="clientImage">
+						<img src="img/person.png" alt="">
+						<span style="line-height: 1;">Raju Sheoran<br>
+							<p style="color: #fff;font-size: 15px;">Lorem</p>
+						</span>
+					</div>
+				</div>
+				<article>
+					<p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+						voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+						facere exercitationem!</p>
+				</article>
+				<div class="top">
+					<ul>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-solid fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+						<li><i class="fa-regular fa-star"></i></li>
+					</ul>
+				</div>
+			</div>
+			<button class="button">
+				<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
+					<path fill="#4285F4"
+						d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027">
+					</path>
+					<path fill="#34A853"
+						d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1">
+					</path>
+					<path fill="#FBBC05"
+						d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782">
+					</path>
+					<path fill="#EB4335"
+						d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251">
+					</path>
+				</svg>
+				Nos avalie no Google também
+			</button>
+		</div>
 	</section>
 
 	<section class="orcamento" id="orcamento">
 		<div class="main-text">
 			<h2>Faça seu <span>orçamento</span></h2>
-			<p>A orçamento será enviado para o nosso WhatsApp</p>
+			<p>A mensagem será enviada para o nosso WhatsApp</p>
 		</div>
 		<div class="form-orcamento">
 			<div class="inputGroup">
 				<input id="text_nome" autocomplete="off" required="" type="text">
-				<label for="name">Nome*</label>
+				<label for="name">Nome</label>
 			</div>
 			<div class="inputGroup" style="width: 49%;">
-				<input id="text_evento" autocomplete="off" required="" type="text">
-				<label for="name">Evento</label>
+				<input id="text_aparelho" autocomplete="off" required="" type="text">
+				<label for="name">Aparelho</label>
 			</div>
 			<div class="inputGroup" style="width: 49%;">
-				<input id="text_qtd" autocomplete="off" required="" type="number">
-				<label for="name">Quantidade*</label>
-			</div>
-			<div class="inputGroup" style="width: 49%;">
-				<input id="text_data" autocomplete="off" required="" type="date">
-				<label for="name"
-					style="transform: translateY(-50%) scale(.9);margin: 0em;margin-left: 1.3em;padding:0 0.4em;background-color: var(--second-bg-color);">Data*</label>
-			</div>
-			<div class="inputGroup" style="width: 49%;">
-				<input id="text_hora" autocomplete="off" required="" type="time">
-				<label for="name"
-					style="transform: translateY(-50%) scale(.9);margin: 0em;margin-left: 1.3em;padding:0 0.4em;background-color: var(--second-bg-color);">Horário*</label>
+				<input id="text_marca" autocomplete="off" required="" type="text">
+				<label for="name">Marca</label>
 			</div>
 			<div class="inputGroup">
-				<input id="text_obs" autocomplete="off" required="" type="text">
-				<label for="name">Observação</label>
+				<input id="text_problema" autocomplete="off" required="" type="text">
+				<label for="name">Problema</label>
 			</div>
-			<a id="apiLink" class="btn-orcamento">Reservar</a>
+			<a id="apiLink" class="button" style="background-color: #55a234;border:none;">Enviar</a>
 		</div>
 	</section>
 
 	<!----maps section design--->
 	<section class="maps" id="maps">
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14670.497477577439!2d-45.8837871!3d-23.1839059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b8edb673053%3A0x7b2891a3628545db!2sElectronic%20Charge!5e0!3m2!1spt-BR!2sbr!4v1703209309129!5m2!1spt-BR!2sbr" 
-				width="100%" height="300" style="border-radius: 0; border: none;" allowfullscreen=" " loading="lazy "
-				referrerpolicy="no-referrer-when-downgrade "></iframe>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14670.497477577439!2d-45.8837871!3d-23.1839059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b8edb673053%3A0x7b2891a3628545db!2sElectronic%20Charge!5e0!3m2!1spt-BR!2sbr!4v1703209309129!5m2!1spt-BR!2sbr"
+			width="100%" height="300" style="border-radius: 0; border: none;" allowfullscreen=" " loading="lazy "
+			referrerpolicy="no-referrer-when-downgrade "></iframe>
 	</section>
 
 	<!----end section design--->
 	<section class="end">
-		<div class="last-text">
-			<p>© 2022 por Ali Mohamed. - @alikhodr10</p>
-		</div>
-
-		<div class="top">
+		<div class="top2">
 			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+		<div class="last-text">
+			<p>© 2024 por Ali Mohamed. - @alikhodr10</p>
 		</div>
 	</section>
 
 	<!---custom js link--->
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/reserva.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
 
 
 	<!-- Google tag (gtag.js) -->
