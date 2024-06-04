@@ -9,9 +9,14 @@ function validarDataHora() {
     return false;
   }
 
-  var apiLink = "https://api.whatsapp.com/send?phone=551299685-0827&text=*Nome:*%20" + inputNome + "%0A*Aparelho:*%20" + inputAparelho + "%0A*Marca:*%20" + inputMarca + "%0A*Problema:*%20" + inputProblema + "";
+  var apiLink = "https://api.whatsapp.com/send?phone=5512996850827&text=Olá, gostaria de fazer um orçamento%0A*Nome:*%20" + inputNome + "%0A*Aparelho:*%20" + inputAparelho + "%0A*Marca:*%20" + inputMarca + "%0A*Problema:*%20" + inputProblema;
   document.getElementById('apiLink').href = apiLink;
 
+  document.getElementById('text_nome').value = '';
+  document.getElementById('text_aparelho').value = '';
+  document.getElementById('text_marca').value = '';
+  document.getElementById('text_problema').value = '';
+  
   return true;
 }
 
