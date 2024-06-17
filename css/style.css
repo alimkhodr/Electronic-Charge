@@ -181,22 +181,22 @@ header.sticky {
 }
 
 /* slide */
-.services-content{
-	display: flex;
+.services-content {
+    display: flex;
     justify-content: center;
 }
 
 #slider-container {
-    height: 300px;
-	width: 85vw;
-	max-width: 1400px;
+    height: 400px;
+    width: 85vw;
+    max-width: 1400px;
     position: relative;
     overflow: hidden;
     padding: 20px;
 }
 #slider-container .btn {
     position: absolute;
-	top: calc(50% - 10px);
+    top: calc(50% - 10px);
     height: 15px;
     width: 15px;
     border-left: 8px solid #696969;
@@ -207,11 +207,11 @@ header.sticky {
     transform: scale(1.2);
 }
 #slider-container .btn.inactive {
-    border-color: #282828
+    border-color: #282828;
 }
 #slider-container .btn:first-of-type {
     transform: rotate(-45deg);
-    left: 10px
+    left: 10px;
 }
 #slider-container .btn:last-of-type {
     transform: rotate(135deg);
@@ -224,27 +224,30 @@ header.sticky {
     transition: all .5s;
 }
 #slider-container #slider .slide {
-	height: 90%;
+    height: 90%;
     margin: auto 10px;
     border-radius: 5px;
     display: grid;
     place-items: center;
-    align-content: space-evenly;
+    align-content: center;
 }
 #slider-container #slider .slide span {
-    font-size: 30px;
-	font-weight: bold;
-	color: var(--bg-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--bg-color);
 }
 #slider-container #slider .slide a {
-	    color: #6666b4;
+    color: #6666b4;
+    cursor: pointer;
 }
 #slider-container #slider .slide p {
+    font-size: 15px;
+}
+#slider-container #slider .slide i {
     font-size: 20px;
 }
-
 #slider-container #slider .slide img {
-	height: 200px;
+    height: 200px;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -267,15 +270,29 @@ header.sticky {
         width: calc(10% - 20px);
     }
 }
-
+/* Teenyicons */
 .teenyicons--right-solid {
-	display: inline-block;
-	width: 0.5em;
-	height: 0.5em;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath fill='%236666b4' d='M12 7.5L4 0v15z'/%3E%3C/svg%3E");
-  }
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath fill='%236666b4' d='M12 7.5L4 0v15z'/%3E%3C/svg%3E");
+}
+
+/* Rotate icon down */
+.rotate-down {
+    transform: rotate(90deg);
+}
+
+/* Adicione esta parte ao seu CSS */
+.teste-paragraph {
+    display: none;
+}
+
+.teste-paragraph.visible {
+    display: block;
+}
 /* slide */
 
 .avaliacao {
